@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+}
+.wrapper{
+    perspective: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+}
+.bg,.fg{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;  
+}
+.bg{
+    transform: translateZ(-40px); scale: 5;
+}
+.fg{
+    transform: translateZ(-18.8px); scale: 3;
+}
+h1{
+    position: absolute;
+    color: white;
+    /* align-self: flex-start; */
+    top: 150px;
+    font-size: 100px;
+}
+section{
+    position: absolute;
+    color: white;
+    font-size: x-large;
+    background-color: black;
+}
+.bgimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    width: 100%;
+    background-attachment: fixed;   
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg1{
+    background-image: url('https://images.healthshots.com/healthshots/en/uploads/2023/07/20143449/hiking.jpg');
+} 
+.bg2{
+    background-image: url('https://cdn.britannica.com/17/226517-050-76787260/Brazilian-surfer-Maya-Gabeira-Surfs-Billabong-Rio-Pro-Barra-da-Tijiuca-at-Rio-De-Janeiro-May-12-2011.jpg');
+}
+.bg3{
+    background-image: url('https://static2.tripoto.com/media/filter/tst/img/1/SpotDocument/1493910338_1493809196_i_want_to_fly_like_an_eagle_tandem_flights.jpg.webp');
+}
+.text{
+    padding: 25px 18px;
+}
+.h2clss{
+    background-color: aliceblue;
+    color: black;
+    display: inline;
+    padding: 10px;  
+}
